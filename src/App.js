@@ -46,6 +46,8 @@ import NotFound from "./component/layout/NotFound/NotFound";
 
 
 function App() {
+  axios.defaults.baseURL = 'https://tcl-12-1-6ych.vercel.app';
+
 
   const { isAuthenticated, user} = useSelector((state)=> state.user);
 
